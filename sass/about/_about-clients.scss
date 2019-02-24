@@ -1,0 +1,16 @@
+#about-clients{
+    padding: 80px 0;
+    .container-fluid{
+        .container{
+            .row{
+                p{
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+                .cs-shadow{
+                    box-shadow: 1px 2px 13px 1px rgba(0, 0, 0, 0.17);
+                }
+            }
+        }
+    }
+}

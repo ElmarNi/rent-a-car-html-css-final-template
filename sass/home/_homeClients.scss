@@ -1,0 +1,27 @@
+#clients{
+    padding: 80px 0;
+    background: #f7f7f7;
+    .container-fluid{
+        .container{
+            .row{
+                .top{
+                    p{
+                        color: $mainColor;
+                    }
+                }
+                .cs-shadow{
+                    filter: drop-shadow(0 0 2px rgba(0,0,0,0.15));
+                    &::before{
+                        position: absolute;
+                        content: '';
+                        bottom:-25px;
+                        left: 17%;
+                        border-style: solid;
+                        border-width: 34px 34px 0 0;
+                        border-color: #fff transparent transparent transparent;
+                    }
+                }
+            }
+        }
+    }
+}

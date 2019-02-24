@@ -1,0 +1,37 @@
+#vehicle-type{
+    padding: 80px 0 40px 0;
+    background: #f7f7f7;
+    .container-fluid{
+        .container{
+            h3{
+                margin-top: -50px;
+            }
+            p{
+                font-size: 16px;
+                color: $mainColor;
+            }
+            a{
+                color: #606060;
+                text-decoration: underline;
+                text-transform: uppercase;
+                transition: all .4s;
+                font-weight: 500;
+                &:hover{
+                    color: $mainColor;
+                }
+            }
+            .circle-icons{
+               background: white;
+               border-radius: 100%;
+               border: 10px solid #f7f7f7;
+               position: relative;
+               left: 50%;
+               transform: translate(-50%,-60%);
+               z-index: 1;
+               font-size: 50px;
+               box-sizing: content-box;
+               padding: 13px 11px;
+            }
+        }
+    }
+}

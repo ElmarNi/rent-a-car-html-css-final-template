@@ -1,0 +1,25 @@
+#about-statistics{
+    padding: 130px 0 70px 0;
+    background-image: url(../img/bg-counter-22.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba($color: black, $alpha: .3);
+    background-blend-mode: color;
+    .container-fluid{
+        .container{
+            .row{
+                h2,h3{
+                    color: white;
+                }
+                h2{
+                    font-size: 50px;
+                    margin-bottom: 20px;
+                }
+                h3{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

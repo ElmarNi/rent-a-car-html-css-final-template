@@ -1,0 +1,45 @@
+#choose{
+    padding: 80px 0;
+    background: #333;
+    .container-fluid{
+        .container{
+            h2{
+                color: white;
+            }
+            h3{
+                color: white;
+            }
+            .row{
+                .col-md-6,.col-lg-4{
+                    .main{
+                        position: relative;
+                        z-index: 1;
+                        border:1px solid #5c5c5c;
+                        max-height: 233px;
+                        i{
+                            font-size: 40px;
+                        }
+                        .overlay{
+                            border: 1px solid #5c5c5c;
+                            position: absolute;
+                            top: 5px;
+                            left: 5px;
+                            right: 5px;
+                            bottom: 5px;
+                            transition: all .4s;
+                            z-index: 0;
+                        }
+                        &:hover{
+                            .overlay{
+                                top: 0;
+                                left: 0;
+                                bottom: 0;
+                                right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

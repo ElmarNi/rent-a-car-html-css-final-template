@@ -1,0 +1,47 @@
+#work{
+    padding: 80px 0;
+    .container-fluid{
+        .container{
+            .row{
+                .cs-work-div{
+                    background: #f7f7f7;
+                    padding: 20px 20px;
+                    transition: all.4s;
+                    h3{
+                        font-size: 19px;
+                    }
+                    p{
+                        letter-spacing: 1px;
+                    }
+                    i{
+                        font-size: 50px;
+                        color: $mainColor;
+                    }
+                    .icon{
+                        position: absolute;
+                        right: -10px;
+                        top: -10px;
+                        background: white;
+                        width: 50px;
+                        height: 50px;
+                        h3{
+                            font-size: 25px;
+                            color: grey;
+                            position: absolute;
+                            top: 17px;
+                            right: 14px;
+                            transition: all .4s;
+                        }
+                    }
+                    &:hover{
+                        box-shadow: 0 0 12px 0 rgba(0,0,0,.1);
+                        h3{
+                            color:$mainColor;
+                            top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

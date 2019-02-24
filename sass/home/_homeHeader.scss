@@ -1,0 +1,100 @@
+#homeHeader{
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+    .container-fluid{
+        .container{
+            .row{
+            .startBTN{
+                   color: #333;
+                   border-width: 2px;
+                   font-size: .8rem;
+                   transition: all .5s;
+                   cursor: pointer;
+                   &:hover{
+                       background: $mainColor;
+                       color: white !important;
+                       border-color: $mainColor;
+                   } 
+               }
+               .normal-head-contact, .mobile-head-contact{
+                   p{
+                       font-size: 16px;
+                       font-weight: 400;
+                       letter-spacing: 1px;
+                   }
+                    i{
+                        font-size: 20px;
+                        color: $mainColor;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: #333;
+                        transition: all .4s;
+                        &:hover{
+                            color: $mainColor;
+                        }
+                    }
+               }
+            }
+        }
+        
+    }
+    @media (max-width: 991.98px) {
+        .mobile-head-contact{
+            display: block !important;
+        }
+        .normal-head-contact{
+            display: none !important;
+        }
+        .mobile-nav{
+            display: block !important;
+        }
+        .mobile-menu-fixed{
+            position: fixed;
+            background: white;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            left: 0;
+            z-index: 100;
+        }
+    }
+}
+/*Mobile menu*/
+.mainNav{
+    background: #333;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100000000;
+    a{
+        transition: all .4s;
+        color: white;
+        i{
+            font-size: 18px;
+            padding-left: 15px;
+        }
+        &:hover{
+            color: $mainColor;
+        }
+    }
+    
+    .customNav-items{
+        a{
+            color: white;
+            text-transform: uppercase;
+            font-weight: 600;
+            padding: 20px;
+            padding-top: 17px;
+            margin-right: 20px;
+            box-sizing: border-box;
+            transition: all .4s;
+            border-top: 3px solid #333;
+            &:hover{
+                border-top: 3px solid $mainColor;
+            }
+        }
+    }
+    @media (max-width: 991.98px){
+        display: none;
+    }
+}

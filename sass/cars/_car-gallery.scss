@@ -1,0 +1,45 @@
+#car-gallery{
+    padding: 80px 0;
+    .container-fluid{
+        .container{
+            .row{
+                .overlay{
+                    position: absolute;
+                    left: 0;
+                    right: 100%;
+                    top: 0;
+                    bottom: 90px;
+                    background: rgba(48,46,46,.18);
+                    transition: all .4s;
+                    opacity: 0;
+                    transition: all .4s;
+
+                    
+                }
+                img{
+                    transform: scale(1.2);
+                    transition: all .4s;
+                }
+                .hover{
+                    transition: all .4s;
+                    overflow: hidden;
+                    &:hover{
+                        img{
+                            transform-origin: 74%;
+                        }
+                        .overlay{
+                            right: 0;
+                            opacity: 1;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    @media (max-width: 767.98px){
+        .overlay{
+            display: none !important;
+        }
+    }
+}

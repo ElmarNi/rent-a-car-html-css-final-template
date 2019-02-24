@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- FontAwasome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Main Font-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,500i,600,700,900" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Mine css-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Rent Car</title>
+  </head>
+  <body>
+    <a href="#homeHeader" class="arrow-button-in-body"><i class="fas fa-arrow-up"></i></a>
+    <!--Home page header-->
+    <header id="homeHeader">
+        <div class="container-fluid p-0">
+            <div class="container" >
+                <div class="row d-flex justify-content-between align-items-center py-3 mobile-menu-fixed">
+                    <!--Mobile navBar menu-->
+                    <div class="mobile-nav col-2 d-none">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <div class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
+                              <a href="" class="dropdown-item d-inline"><i class="fab fa-facebook-f "></i></a> 
+                              <a href="" class="dropdown-item d-inline"><i class="fab fa-twitter "></i></a> 
+                              <a href="" class="dropdown-item d-inline"><i class="fab fa-google-plus-g "></i></a> 
+                              <a href="" class="dropdown-item d-inline"><i class="fab fa-instagram"></i></a>
+                              <a class="dropdown-item p-2" href="home.html">Home</a>
+                              <a class="dropdown-item p-2" href="about.html">About Us</a>
+                              <a class="dropdown-item p-2" href="cars.html">Cars</a>
+                              <a class="dropdown-item p-2" href="contact.html">Contact Us</a>
+                              <a class="dropdown-item p-2" href="#">Pages</a>
+                            </div>
+                          </div>
+                    </div>
+                    <!--Logo-->
+                    <div class="col-md-3 col-3">
+                        <a href=""><img src="img/logo-default-window-171x46.png" alt=""></a>
+                    </div>
+                    <!--Normal header-contacts-->
+                    <div class="col-md-9 d-flex align-items-center justify-content-end normal-head-contact">
+                        <i class="far fa-clock"></i>
+                        <p class="d-inline m-0 border-right px-2 pr-4 text-dark">09:00AM — 17:00PM</p>
+                        <i class="fas fa-phone fa-rotate-90 ml-4"></i>
+                        <p class="d-inline m-0 pl-2 pr-5"><a href="">+1-323-913-4688</a></p>
+                        <a class="startBTN button btn btn-outline-dark rounded-0 text-uppercase px-4 py-2">Get Started</a>
+                    </div>
+                    <!--Mobile header-contacts-->
+                    <div class="mobile-head-contact col-7 text-right d-none">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-ellipsis-v text-dark"></i>
+                            </button>
+                          <div class="dropdown-menu px-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item p-0 m-0 py-2" href="#">
+                              <i class="far fa-clock"></i>
+                              <p class="d-inline m-0 pl-2">09:00AM — 17:00PM</p>
+                            </a>
+                            <a class="dropdown-item p-0 m-0 py-2" href="#">
+                              <i class="fas fa-phone fa-rotate-90"></i>
+                              <p class="d-inline m-0 pl-2">+1-323-913-4688</p>
+                            </a>
+                            <a class="startBTN button btn btn-outline-dark rounded-0 text-uppercase px-5 py-2" href="#">
+                                Get Started
+                            </a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Large size screen nav-->
+    <nav class="navbar navbar-expand-lg p-0 col mainNav">
+        <div class="container">
+            <div class="col-md-8 p-0">
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav customNav-items">
+                  <a class="nav-item nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link" href="about.html">about us</a>
+                  <a class="nav-item nav-link" href="cars.html">cars</a>
+                  <a class="nav-item nav-link" href="contact.html">contact us</a>
+                  <a class="nav-item nav-link" href="#">pages</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 p-0 text-white text-right">
+                <a href=""><i class="fab fa-facebook-f"></i></a> 
+                <a href=""><i class="fab fa-twitter"></i></a> 
+                <a href=""><i class="fab fa-google-plus-g"></i></a> 
+                <a href=""><i class="fab fa-instagram"></i></a> 
+            </div>
+        </div>
+    </nav>
+    <!--Home page slider-->
+    <section id="homeSlider">
+      <div class="container-fluid">
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col-md-9 text-center col-12">
+            <h1 class="mb-5">Find the Best Car</h1>
+            <p class="mb-5">From as low as $10 per day with limited time offer discounts</p>
+            <!--Dropdowns-->
+            <div class="row d-flex align-items-center justify-content-between">
+              <div class="col-lg-3 col-12 mb-2">
+                <select class="custom-select rounded-0" id="inputGroupSelect01">
+                  <option selected>Any Brand</option>
+                  <option value="1">BMW</option>
+                  <option value="2">Ford</option>
+                  <option value="3">Toyota</option>
+                </select>
+              </div> 
+              <div class="col-lg-3 col-12 mb-2">
+                <select class="custom-select rounded-0" id="inputGroupSelect01">
+                  <option selected>Any Type</option>
+                  <option value="1">Sedan</option>
+                  <option value="2">Hatchback</option>
+                  <option value="3">MVP</option>
+                </select>
+              </div>
+              <div class="col-lg-3 col-12 mb-2">
+                <select class="custom-select rounded-0" id="inputGroupSelect01">
+                  <option selected>Price Low to High</option>
+                  <option value="1">Price High to Low</option>
+                </select>
+              </div>
+              <div class="col-lg-2  col-12 mb-2">
+                <button class="mainBTN">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--First-class Car Rental-->
+    <section id="car-rent">
+      <div class="container-fluid">
+        <div class="container">
+          <h2 class="text-center mb-5 mt-3">First-Class Car Rental</h2>
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <img src="img/hover-effects-2-1-370x303.jpg" class="img-fluid" alt="">
+              <h3 class="clickable-h3 mt-3"><a href="">Audi</a></h3>
+              <p class="mb-4">From $125 per day</p>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <img src="img/hover-effects-2-2-370x303.jpg" class="img-fluid" alt="">
+              <h3 class="clickable-h3 mt-3"><a href="">Prosche</a></h3>
+              <p class="mb-4">From $150 per day</p>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <img src="img/hover-effects-2-3-370x303.jpg" class="img-fluid" alt="">
+              <h3 class="clickable-h3 mt-3"><a href="">Tesla</a></h3>
+              <p class="mb-4">From $130 per day</p>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <img src="img/hover-effects-2-4-370x303.jpg" class="img-fluid" alt="">
+              <h3 class="clickable-h3 mt-3"><a href="">Mercedes-Benz</a></h3>
+              <p class="mb-4">From $170 per day</p>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <img src="img/hover-effects-2-5-370x303.jpg" class="img-fluid" alt="">
+              <h3 class="clickable-h3 mt-3"><a href="">MINI</a></h3>
+              <p class="mb-4">From $110 per day</p>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <img src="img/hover-effects-2-6-370x303.jpg" class="img-fluid" alt="">
+              <h3 class="clickable-h3 mt-3"><a href="">MG</a></h3>
+              <p class="mb-4">From $160 per day</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!--Why choose us-->
+    <section id="choose">
+      <div class="container-fluid">
+        <div class="container">
+            <h2 class="text-center mt-3">Why Choose Us?</h2>
+            <div class="row mt-5">
+                <div class="mb-2 col-md-6 col-lg-4">
+                  <div class="p-2 py-5 main d-flex justify-content-between">
+                    <div class="col-2"><i class="far fa-star text-light mt-2"></i></div>
+                    <div class="col-10">
+                      <h3 class="mt-2"><a href="" class="text-light">Premium Service</a></h3>
+                      <p>Rent Car provides high-quality service to everyone who is looking for reliable car rentals.</p>
+                    </div>
+                    <div class="overlay"></div>
+                  </div>
+                </div>
+                <div class="mb-2 col-md-6 col-lg-4">
+                  <div class="p-2 py-5 main d-flex justify-content-between">
+                    <div class="col-2"><i class="fas fa-map-marker-alt text-light mt-2"></i></div>
+                    <div class="col-10">
+                      <h3 class="mt-2"><a href="" class="text-light">Variety of Locations</a></h3>
+                      <p>We have a variety of car rental offices located throughout the USA in almost all 50 states.</p>
+                    </div>
+                    <div class="overlay"></div>
+                  </div>
+                </div>
+                <div class="mb-2 col-md-6 col-lg-4">
+                  <div class="p-2 py-5 main d-flex justify-content-between">
+                    <div class="col-2"><i class="far fa-sun text-light mt-2"></i></div>
+                    <div class="col-10">
+                      <h3 class="mt-2"><a href="" class="text-light">Qualified Team</a></h3>
+                      <p>You can fully rely on our team of professionals who are always ready to help you.</p>
+                    </div>
+                    <div class="overlay"></div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!--Popular Cars-->
+    <section id="pop-cars">
+      <div class="container-fluid">
+        <div class="container">
+          <h2 class="text-center">Popular Cars</h2>
+          <div class="row mt-5">
+            <div class="col-12 col-md-6 hover mb-4">
+              <div class="col-12 p-3 border d-flex justify-content-between flex-wrap">
+                <div class="col-12 col-md-12 col-lg-6  px-0 overflow-hidden pop-cars-responsive-div mr-3" style="max-width:222px">
+                  <img src="img/post-ruth-bad-1-222x210.jpg" class="img-fluid p-0" alt="">
+                </div>
+                <div class="col-lg-6 col-12 col-md-12">
+                  <!--Icon vs p row-->
+                  <div class="row d-flex align-items-center mt-4">
+                      <i class="fas fa-car-alt text-muted"></i><p class="text-dark ml-2 mr-4 my-0">AUTO</p>
+                      <i class="fas fa-user text-muted"></i><p class="text-dark ml-2 mr-4 my-0">2</p>
+                      <i class="fas fa-suitcase text-muted"></i><p class="text-dark ml-2 mr-4 my-0">3</p>
+                  </div>
+                  <!--Content row-->
+                  <div class="row my-3">
+                    <h3 class="clickable-h3 text-dark"><a href="">Ford Mustang GT Fastback</a></h3>
+                  </div>
+                  <!--BUtton row-->
+                  <div class="row ">
+                    <button class="mainBTN px-3 py-1 ">$120 / DAY
+                        <div class="overlay"></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 hover mb-4">
+              <div class="col-12 p-3 border d-flex justify-content-between flex-wrap">
+                <div class="col-12 col-md-12 col-lg-6 px-0 overflow-hidden pop-cars-responsive-div mr-3" style="max-width:222px">
+                  <img src="img/post-ruth-bad-2-222x210.jpg" class="img-fluid p-0" alt="">
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                  <!--Icon vs p row-->
+                  <div class="row d-flex align-items-center mt-4">
+                      <i class="fas fa-car-alt text-muted"></i><p class="text-dark ml-2 mr-4 my-0">AUTO</p>
+                      <i class="fas fa-user text-muted"></i><p class="text-dark ml-2 mr-4 my-0">4</p>
+                      <i class="fas fa-suitcase text-muted"></i><p class="text-dark ml-2 mr-4 my-0">5</p>
+                  </div>
+                  <!--Content row-->
+                  <div class="row my-3">
+                    <h3 class="clickable-h3 text-dark"><a href="">BMW 6 Series G32 630i</a></h3>
+                  </div>
+                  <!--BUtton row-->
+                  <div class="row ">
+                    <button class="mainBTN px-3 py-1 ">$130 / DAY
+                        <div class="overlay"></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 hover mb-4">
+              <div class="col-12 p-3 border d-flex justify-content-between flex-wrap">
+                <div class="col-12 col-md-12 col-lg-6 px-0 overflow-hidden pop-cars-responsive-div mr-3" style="max-width:222px">
+                  <img src="img/post-ruth-bad-3-222x210.jpg" class="img-fluid p-0" alt="">
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                  <!--Icon vs p row-->
+                  <div class="row d-flex align-items-center mt-4">
+                      <i class="fas fa-car-alt text-muted"></i><p class="text-dark ml-2 mr-4 my-0">AUTO</p>
+                      <i class="fas fa-user text-muted"></i><p class="text-dark ml-2 mr-4 my-0">2</p>
+                      <i class="fas fa-suitcase text-muted"></i><p class="text-dark ml-2 mr-4 my-0">1</p>
+                  </div>
+                  <!--Content row-->
+                  <div class="row my-3">
+                    <h3 class="clickable-h3 text-dark"><a href="">Mercedes-Benz AMG GT 2018</a></h3>
+                  </div>
+                  <!--BUtton row-->
+                  <div class="row ">
+                    <button class="mainBTN px-3 py-1 ">$150 / DAY
+                        <div class="overlay"></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 hover mb-4">
+              <div class="col-12 p-3 border d-flex justify-content-between flex-wrap">
+                <div class="col-12 col-md-12 col-lg-6 px-0 overflow-hidden pop-cars-responsive-div mr-3" style="max-width:222px">
+                  <img src="img/post-ruth-bad-4-222x210.jpg" class="img-fluid p-0" alt="">
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                  <!--Icon vs p row-->
+                  <div class="row d-flex align-items-center mt-4">
+                      <i class="fas fa-car-alt text-muted"></i><p class="text-dark ml-2 mr-4 my-0">AUTO</p>
+                      <i class="fas fa-user text-muted"></i><p class="text-dark ml-2 mr-4 my-0">2</p>
+                      <i class="fas fa-suitcase text-muted"></i><p class="text-dark ml-2 mr-4 my-0">1</p>
+                  </div>
+                  <!--Content row-->
+                  <div class="row my-3">
+                    <h3 class="clickable-h3 text-dark"><a href="">MINI 3-Door <br> Hatch</a></h3>
+                  </div>
+                  <!--BUtton row-->
+                  <div class="row ">
+                    <button class="mainBTN px-3 py-1 ">$110 / DAY
+                        <div class="overlay"></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Find Your Vehicle by Type-->
+    <section id="vehicle-type">
+      <div class="container-fluid">
+        <div class="container">
+          <h2 class="text-center mb-5 pb-4">Find Your Vehicle by Type</h2>
+          <div class="row">
+            <div class="col-sm-6 col-md-3 d-flex flex-wrap mt-5 mb-5">
+              <div class="col-12 bg-white border text-center positin-relative pb-4">
+                <div class="text-center circle-icons col-5 col-md-8 col-lg-5"><i class="fas fa-car"></i></div>
+                <h3 class="">Sedan</h3>
+                <p class="m-0">14 cars</p>
+                <a href="">View</a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 d-flex flex-wrap mt-5 mb-5">
+              <div class="col-12 bg-white border text-center positin-relative pb-4">
+                <div class="text-center circle-icons col-5 col-md-8 col-lg-5"><i class="fas fa-code-branch"></i></div>
+                <h3 class="">Electric Car</h3>
+                <p class="m-0">8 cars</p>
+                <a href="">View</a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 d-flex flex-wrap mt-5 mb-5">
+              <div class="col-12 bg-white border text-center positin-relative pb-4">
+                <div class="text-center circle-icons col-5 col-md-8 col-lg-5"><i class="fas fa-car-crash"></i></div>
+                <h3 class="">SUV</h3>
+                <p class="m-0">12 cars</p>
+                <a href="">View</a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 d-flex flex-wrap mt-5 mb-5">
+              <div class="col-12 bg-white border text-center positin-relative pb-4">
+                <div class="text-center circle-icons col-5 col-md-8 col-lg-5"><i class="fas fa-shuttle-van"></i></div>
+                <h3 class="">Bus & Coach</h3>
+                <p class="m-0">2 cars</p>
+                <a href="">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--15+ Years of Experience-->
+    <section id="experience">
+      <div class="container-fluid">
+        <div class="container">
+          <!--First row-->
+          <div class="row mt-4">
+            <div class="col-md-6 col-lg-5 col-xl-4 mb-4">
+              <img src="img/index-01-357x271.jpg"  alt="">
+            </div>
+            <div class="col-sm-8 col-md-6 col-lg-5 col-xl-4 mb-3">
+              <h2 class="text-white border-left pl-4">15+ Years of Experience</h2>
+              <p class="py-4 px-3 m-0 mb-1">With more than 15 years of experience, our team offers quality car rental services to all US guests and residents.</p>
+              <button class="mainBTN mt-3">Find a Car</button>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 mb-4">
+              <!--Results-->
+              <div class="row">
+                <div class="col-6 border-bottom border-secondary">
+                  <div class="content text-center pr-4 pb-3">
+                    <h4 class="text-white">20</h4><span>K</span>
+                    <p class="text-white m-0">HAPPY CLIENTS</p>
+                  </div>
+                </div>
+                <div class="col-6 border-left border-bottom border-secondary">
+                  <div class="content text-center pl-4 pb-3">
+                    <h4 class="text-white">14</h4><span>K</span>
+                    <p class="text-white m-0">CARS</p>
+                  </div>
+                </div>
+                <div class="col-6 border-secondary">
+                  <div class="content text-center pr-4 pt-3">
+                    <h4 class="text-white">10</h4><span>K</span>
+                    <p class="text-white m-0">CAR TYPES</p>
+                  </div>
+                </div>
+                <div class="col-6 border-left border-secondary">
+                  <div class="content text-center pl-4 pt-3">
+                    <h4 class="text-white">16</h4><span>K</span>
+                    <p class="text-white m-0">BRANDS</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Second Row-->
+          <div class="row second-row mt-4">
+            <div class="col-sm-6 col-lg-3 mt-2">
+              <div class="col-12  border border-secondary p-0">
+                <div class="col-12 border border-secondary div-overlay text-center">
+                  <img src="img/clients-001-270x117.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mt-2">
+              <div class="col-12  border border-secondary p-0">
+                <div class="col-12 border border-secondary div-overlay text-center">
+                  <img src="img/clients-002-270x117.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mt-2">
+              <div class="col-12  border border-secondary p-0">
+                <div class="col-12 border border-secondary div-overlay text-center">
+                  <img src="img/clients-003-270x117.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mt-2">
+              <div class="col-12  border border-secondary p-0">
+                <div class="col-12 border border-secondary div-overlay text-center">
+                  <img src="img/clients-004-270x117.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Happy Clients-->
+    <section id="clients">
+      <div class="container-fluid">
+        <div class="container">
+          <h2 class="text-center">Happy Clients</h2>
+          <div class="row mt-5">
+            <div class="col-md-6 positin-relative mb-5">
+              <div class="col-12 bg-white border cs-shadow">
+                <!--head content-->
+                <div class="top d-flex align-items-center pt-5">
+                  <div class="col-3">
+                    <img src="img/user-11-75x75.jpg" class="img-fluid rounded-circle" alt="">
+                  </div>
+                  <div class="col-9">
+                    <h3 class="clickable-h3 m-0"><a href="">Catherine Williams</a></h3>
+                    <p class="m-0">Regular client</p>
+                  </div>
+                </div>
+                <!--Bottom Content-->
+                <div class="bottom py-4">
+                  <div class="col-12">
+                    <p class="text-dark">This is my second time booking with you. Not only are you the best on the coast but you have the best prices and the friendliest staff. I will be renting a car from your company now.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 positin-relative ">
+              <div class="col-12 bg-white border cs-shadow">
+                <!--head content-->
+                <div class="top d-flex align-items-center pt-5">
+                  <div class="col-3">
+                    <img src="img/user-20-75x75.jpg" class="img-fluid rounded-circle" alt="">
+                  </div>
+                  <div class="col-9">
+                    <h3 class="clickable-h3 m-0"><a href="">Samantha Brown</a></h3>
+                    <p class="m-0">Regular client</p>
+                  </div>
+                </div>
+                <!--Bottom Content-->
+                <div class="bottom py-4">
+                  <div class="col-12">
+                    <p class="text-dark">I have rented a car quite a few times in LA and cannot fault any of the services. Your staff is wonderful, the process is easy, and prices are very affordable. I’m glad to recommend your services!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--How We Work-->
+    <section id="work">
+      <div class="container-fluid">
+        <div class="container">
+          <h2 class="text-center">How We Work</h2>
+          <div class="row d-flex justify-content-center mt-5">
+            <div class="col-sm-6 col-md-5 col-lg-3 mb-4">
+              <div class="col-12 cs-work-div positin-relative">
+                  <i class="fas fa-search"></i>
+                  <h3 class="clickable-h3 pt-2"><a href="">Find Your Car</a></h3>
+                  <p>First, you need to find & choose a preferable car in our online catalog.</p>
+                  <!--Div's number-->
+                  <div class="icon">
+                    <h3>01</h3>
+                  </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-5 col-lg-3 mb-4">
+              <div class="col-12 cs-work-div positin-relative">
+                  <i class="far fa-list-alt"></i>
+                  <h3 class="clickable-h3 pt-2"><a href="">Select the Rate</a></h3>
+                  <p>After that, select a desired daily rate for your car to calculate the rental price.</p>
+                  <!--Div's number-->
+                  <div class="icon">
+                    <h3>02</h3>
+                  </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-5 col-lg-3 mb-4">
+              <div class="col-12 cs-work-div positin-relative">
+                  <i class="fas fa-car"></i>
+                  <h3 class="clickable-h3 pt-2"><a href="">Get the Car</a></h3>
+                  <p>You can get the chosen car at one of our nearest offices.</p>
+                  <!--Div's number-->
+                  <div class="icon">
+                    <h3>03</h3>
+                  </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-5 col-lg-3 mb-4">
+              <div class="col-12 cs-work-div positin-relative">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <h3 class="clickable-h3 pt-2"><a href="">Return the Car</a></h3>
+                  <p>When the time of rent runs out, you will have to return the car to our office.</p>
+                  <!--Div's number-->
+                  <div class="icon">
+                    <h3>04</h3>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Popular Questions-->
+    <section id="ques">
+      <div class="container-fluid">
+        <div class="container">
+          <h2 class="text-center">Popular Questions</h2>
+          <div class="row mt-5">
+            <div class="col-lg-6 pb-5">
+              <div class="col-12 border mb-3 d-flex justify-content-between align-items-center">
+                <div class="col-10 p-0">
+                  <h3 class="clickable-h3"><a href="">Do you provide any scripts?</a></h3>
+                </div>
+                <div class="col-3 col-sm-2 icon-plus"><h1>+</h1></div>
+              </div>
+              <div class="col-12 border mb-3 d-flex justify-content-between align-items-center">
+                <div class="col-10 p-0">
+                  <h3 class="clickable-h3"><a href="">What do I receive when I order a template?</a></h3>
+                </div>
+                <div class="col-3 col-sm-2 icon-plus"><h1>+</h1></div>
+              </div>
+              <div class="col-12 border mb-3 d-flex justify-content-between align-items-center">
+                <div class="col-10 p-0">
+                    <h3 class="clickable-h3"><a href="">What am I allowed to do with a template?</a></h3>
+                </div>
+                <div class="col-3 col-sm-2 icon-plus"><h1>+</h1></div>
+              </div>
+            </div>
+            <!--Videos-->
+            <div class="col-lg-6">
+                <iframe style="width:100%;height:100%;" src="https://www.youtube.com/embed/OLL__qKKY-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="firs-foot">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row first-row d-flex justify-content-center">
+            <!--About us-->
+            <div class="col-sm-6 col-lg-3 col-xl-4 col-9">
+              <div class="col-12">
+                <h3>About Us</h3>
+                <ul class="list-style-none p-0">
+                  <li class="d-flex flex-wrap mb-3">
+                    <div class="icon mr-3">
+                      <i class="fas fa-phone fa-rotate-90"></i>
+                    </div>
+                    <div class="content">
+                      <p class="d-inline"><a href="">+1 323-913-4688</a></p>
+                    </div>
+                  </li>
+                  <li class="d-flex flex-wrap mb-3">
+                    <div class="icon mr-3">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="content">
+                      <p class="d-inline"><a href="">info@demolink.org</a></p>
+                    </div>
+                  </li>
+                  <li class="d-flex flex-wrap mb-3">
+                    <div class="icon mr-3">
+                      <i class="fas fa-location-arrow"></i>
+                    </div>
+                    <div class="content">
+                      <p class="d-inline"><a href="">4730 Crystal Springs Dr, <br> Los Angeles, CA 90027</a></p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--Popular news list-->
+            <div class="col-sm-6 col-lg-3 col-xl-4 col-9">
+              <div class="col-12">
+                <h3>popular news</h3>
+                <ul class="list-style-none p-0">
+                  <li>
+                    <p><a href="">Most Common Dashboard <br> Warning Lights</a></p>
+                    <span>MAY 04, 2018</span>
+                  </li>
+                  <li>
+                    <p><a href="">Car Rental Bookings - <br> Mobile vs Desktop</a></p>
+                    <span>MAY 04, 2018</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--Quick news list-->
+            <div class="col-sm-12 col-lg-3 col-xl-4 col-9">
+              <div class="col-12">
+                <h3 class="d-block">quick news</h3>
+                <!--Left VS right Lists-->
+                <div class="col-12 d-flex justify-content-between p-0">
+                  <!--body left-->
+                  <ul class="p-0 circled-icons">
+                    <li class="d-flex align-items-center">
+                      <i class="fas fa-circle"></i>
+                      <p class="m-0 ml-2"><a href="">About Us</a></p>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <i class="fas fa-circle"></i>
+                      <p class="m-0 ml-2"><a href="">Our Cars</a></p>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <i class="fas fa-circle"></i>
+                      <p class="m-0 ml-2"><a href="">Blog</a></p>
+                    </li>
+                  </ul>
+                  <!--body right-->
+                  <ul class="circled-icons">
+                    <li class="d-flex align-items-center">
+                      <i class="fas fa-circle"></i>
+                      <p class="m-0 ml-2"><a href="">Services</a></p>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <i class="fas fa-circle"></i>
+                      <p class="m-0 ml-2"><a href="">Get in touch</a></p>
+                    </li>
+                  </ul>
+                </div>
+                <button class="mainBTN my-3">FIND A CAR</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer id="second-foot">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row second-row py-4 d-flex align-items-center justify-content-center">
+            <div class="col-md-6 col-lg-4 col-8">
+              <p class="m-0">© 2019 Rent Car. All rights reserved</p>
+            </div>
+            <div class="col-md-6 col-lg-4 text-center">
+              <div class="icon">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-google-plus-g"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-4 col-5 text-right">
+              <a href="">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

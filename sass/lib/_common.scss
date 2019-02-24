@@ -1,0 +1,111 @@
+body{
+    font-family: $mainFont;
+    font-size: $fontSize;
+    color: #333;
+    .arrow-button-in-body{
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 5;
+        padding: 10px 15px;
+        background: $mainColor;
+        color: white;
+        transition: all .4s;
+        &:hover{
+            background: #9b9b9b;
+        }
+        i{
+            font-size: 20px;
+        }
+    }
+}
+.no-border{
+    border: 0px;
+}
+.mainBTN{
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        background: $mainColor;
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        border: 0;
+        padding: 15px 30px;
+        transition: all .4s;
+        &:hover{
+            background: #9b9b9b;
+        }
+}
+h2{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #333333;
+}
+h3{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31px;
+    color: #151515
+}
+p{
+    color: #9b9b9b;
+    line-height: 24px;
+}
+.clickable-h3{
+    a{
+        color: #333333;
+        transition: all .4s;
+        text-decoration: none;
+        &:hover{
+            color: $mainColor;
+        }
+    }
+}
+/*cars vs about slider sections*/
+.subpages-sliders{
+    .container-fluid{
+        .container{
+            .row{
+                h1{
+                    color: white;
+                    font-size: 50px;
+                }
+                .cs-breadcrumb{
+                    ol{
+                        background-color: transparent;
+                        li{
+                            &::before{
+                                color: rgba(255,255,255,.53);
+                            }
+                        }
+                        li,a{
+                            color:  rgba(255,255,255,.53);
+                            font-size: 20px;
+                            text-decoration: none;
+                            transition: all .4s;
+                        }
+                        a{
+                            color: white;
+                            padding-right: 5px;
+                            &:hover{
+                                border-bottom: 2px solid $mainColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*home experience vs about brands sections*/
+.second-row{
+    .div-overlay{
+        transform: scale(1);
+        transition: all .4s;
+        &:hover{
+            transform: scale(.9);
+        }
+    }
+}

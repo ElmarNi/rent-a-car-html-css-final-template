@@ -1,0 +1,33 @@
+#experience{
+    background: #333;
+    padding: 80px 0;
+    .container-fluid{
+        .container{
+            .row{
+                .content{
+                    box-sizing: border-box;
+                    span{
+                    color: white;
+                    font-size: 35px;
+                    font-weight: 400;
+                    }
+                    h4{
+                        color: white;
+                        font-size: 60px;
+                        display: inline;
+                        font-weight: 400;
+                    }
+                }
+                
+                h2{
+                    border-left-color: $mainColor !important;
+                    border-left-width: 5px !important;
+                }
+                p{
+                    letter-spacing: 1px;
+                    color: rgba(255,255,255,.3);
+                }
+            }
+        }
+    }
+}

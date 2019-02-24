@@ -1,0 +1,45 @@
+#info{
+    padding: 80px 0;
+    .container-fluid{
+        .container{
+            .row{
+                .hover{
+                    transition: all .4s ease;
+                    &:hover{
+                        box-shadow: 0 0 10px 0 rgba(0,0,0,.17);
+                        .line{
+                            margin: 25px auto;
+                            width: 50%;
+                        }
+                    }
+                }
+                .line{
+                    margin: 15px auto;
+                    width: 0;
+                    background: $mainColor;
+                    transition: all .3s ease-in-out;
+                    height: 2px;
+                }
+                .icon{
+                    i{
+                        font-size: 60px;
+                        color: $mainColor;
+                    }
+                }
+                .links{
+                    p{
+                        a{
+                            color: #333;
+                            font-size: 18px;
+                            text-decoration: none;
+                            transition: all .4s;
+                            &:hover{
+                                color: #9b9b9b;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

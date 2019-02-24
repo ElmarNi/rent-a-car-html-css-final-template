@@ -1,0 +1,25 @@
+#homeSlider{
+    padding: 180px 0;
+    background-image: url(../img/bg-forms-1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    h1{
+        font-size: 70px;
+        color: white;
+        font-weight: 600;
+        letter-spacing: 5px;
+    }
+    p{
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: #ddd;
+    }
+    select{
+        height: 48px;
+    }
+    button{
+        width: 100%;
+    }
+}
